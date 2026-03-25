@@ -66,9 +66,9 @@ function M.close()
     M.plugins_on_close()
     M.opts.on_close()
     M.opts = nil
-    if M.parent and vim.api.nvim_win_is_valid(M.parent) then
-      vim.api.nvim_set_current_win(M.parent)
-    end
+    -- if M.parent and vim.api.nvim_win_is_valid(M.parent) then
+    --   vim.api.nvim_set_current_win(M.parent)
+    -- end
   end
 end
 
